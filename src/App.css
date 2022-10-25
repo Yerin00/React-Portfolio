@@ -1,38 +1,263 @@
+/* 
+ */
+
 .App {
-  text-align: center;
+    /* background:linear-gradient(#8086ff,#0b104e); */
+    /* background-color: #1b213b;  */
+    background-color: rgb(255, 255, 255);
+}
+.row-header{
+    margin:30px auto;
+    padding:0px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.footer{
+    /* background-color: #0c1736; */
+    background-color: #000000;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+/* .jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #a6ff00 ;
+    color:rgb(0, 0, 0);
+} */
+
+
+.navbar-dark {
+    background-color: #ffffff;
+    
+}
+
+/* ------------------------------ 개인 설정 ----------------------------- */
+img {
+    width: 100%;
+    
+}
+.txtBlack {
+    color: black;
+}
+
+.typeit_md {
+    font-size:x-large;
+}
+
+.typeStyle {
+    height: 300px;
+    width: auto;
+    color: black;
+    margin : 50px;
+    padding : 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.box {
+    text-align: center;
+    box-sizing: border-box;
+	width: auto;
+	height: auto;
+    padding: 30px;
+	background-color: rgba(151, 151, 151, 0.3);
+    border-radius: 30px;
+}
+
+.myBtn {
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    background: rgba(255, 74, 207, 0.822);
+    cursor: pointer;
+}
+
+[data-scroll] {
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform: translateY(6rem) scale(0.93);
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+  
+[data-scroll='in'] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+  
+[data-scroll='out'] {
+    opacity: 0;
+}
+
+
+/* Gallery  */
+body {
+    padding: 0;
+    margin: 0;
+    background: #f9fbf8;
   }
-}
+  
+  * {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    color: #222;
+  }
+  
+  .gallery {
+    padding: 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+  }
+  
+  .thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .thumbnail {
+    flex: 1 0 33%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .frame {
+    overflow: hidden;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+  }
+  /* 배경 좌우명 */
+  .motto1 {
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    color: #0048ffdd;
+    transform: translateX(-40%);
+    pointer-events: none;
+  }
+  .motto2 {
+    top: 0px;
+    font-size: 70px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    position: fixed;
+    z-index: 0;
+    color: #84a7ff50;
+    transform: translateX(-5%);
+    pointer-events: none;
+  }
+  
+  .single {
+    overflow: hidden;
+    /* height: 100vh; */
+  }
+  
+  .single img {
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  
+  .back {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    font-size: 54px;
+    z-index: 1;
+  }
+  
+  .back a {
+    text-decoration: none;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* hover -> thumbnail img change */
+
+  .thumbnail_div {
+    margin: 0px auto;
+    position: relative
+  }
+  .thumbnail_back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+  }
+  .thumbnail_div:hover .thumbnail_back{
+    opacity: 1;
+  }
+
+/* topButton */
+.scroll__container{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 1;
+}
+#top{
+  font-weight: bold;
+  font-size: x-large;
+  padding :10px 20px;
+  background-color: white;
+  color:rgb(143, 143, 143);
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#top:hover{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#profileImg {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*   
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 140px;
+      bottom: -130px;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 180px;
+      bottom: -170px;
+    }
   }
-}
+  
+  @media screen and (min-width: 1000px) {
+    h1 {
+      font-size: 220px;
+      bottom: -200px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    h1 {
+      font-size: 280px;
+      bottom: -260px;
+    }
+  }
+   */
