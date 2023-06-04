@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# React-Portfolio
+https://choiyerin-react-portfolio.netlify.app/
+![포폴사이트1](https://github.com/Yerin00/React-Portfolio/assets/57207126/0ebbf67a-0737-4cd1-8530-f5e24bdad688)
+![포폴사이트2](https://github.com/Yerin00/React-Portfolio/assets/57207126/c2999618-7fc3-4695-9ab3-15af1de645d0)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
